@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(212, 255, 241);
+}
+
+/* index html */
+.login-container{
+    margin-top: 30px;
+    width: 100vh;
+}
+
+.login-input {
+    margin-bottom: 30px;
+}
+
+
+.login-button {
+    width: 100%;
+    border-style: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    color: rgb(36, 35, 35);
+    background-color: rgb(212, 255, 241);
+}
+
+.login-button:hover{
+    background-color: rgb(109, 247, 201);
+}
+
+.login-footer{
+    text-align: center;
+    gap: 10px;
+}
+
+span.register-text {
+    color : blue;
+    cursor: pointer;
+}
+
+.section-header{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.card-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-search{
+    margin-top: 20px;
+}
+
+.card-perjalanan {
+    margin-top: 20px;
+}
+
+#reset-button{
+    display: none;
+}
+
+.right{
+    display: flex;
+}
+
+.card-stok-new {
+    margin-bottom: 20px;
+}
+
+.forget {
+    cursor: pointer;
+    color: blue;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITTA - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container login-container">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+            <form id="form-login">
+            <div class="card-body">
+                <div class="login-input">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="login-input">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" aria-describedby="emailHelp">
+                </div>
+                <div class="login-input">
+                    <label for="exampleInputEmail1" class="form-label forget" data-bs-toggle="modal" data-bs-target="#forgetModal">Lupa Password</label>
+                </div>
+            </div>
+            <div class="card-footer login-footer">
+                <button type="submit" class="login-button">
+                    Login
+                </button>
+                <span class="account-text">Dont have an account?</span> <span class="register-text" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</span>
+            </div>
+        </div>
+        </form>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">Nama</label>
+                    <input type="email" class="form-control" id="nama_register" aria-describedby="emailHelp">
+                </div>
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email_register" aria-describedby="emailHelp">
+                </div>
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password_register" aria-describedby="emailHelp">
+                </div>
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">Role</label>
+                    <input type="email" class="form-control" id="role_register" aria-describedby="emailHelp">
+                </div>
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">Lokasi</label>
+                    <input type="email" class="form-control" id="lokasi_register" aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" type="submit">Register</button>
+                </form>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="forgetModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Forget Password</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="register-input">
+                    <label for="exampleInputEmail1" class="form-label">New Password</label>
+                    <input type="password" class="form-control" aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" type="submit">Change Password</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
