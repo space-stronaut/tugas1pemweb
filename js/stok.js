@@ -47,6 +47,7 @@ var dataBahanAjar = [
 ];
 
 function getData() {
+    document.getElementById("body").innerHTML = ""
     dataBahanAjar.forEach(e => {
     document.getElementById("body").innerHTML += "<tr><td>"+ e.kodeLokasi +"</td><td>"+ e.kodeBarang +"</td><td>"+ e.namaBarang +"</td><td>"+ e.jenisBarang +"</td><td>"+ e.edisi +"</td><td>"+ e.stok +"</td><td><img width=100 src='assets/"+ e.cover +"'/></td></tr>"
 
@@ -79,7 +80,6 @@ document.getElementById("stok-form").addEventListener("submit", (e) => {
 
     dataBahanAjar.push(obj)
 
-    alert("Data " + kodeBarang + " berhasil ditambahkan!")
     kodeLokasi = ""
     kodeBarang = ""
     namaBarang = ""
@@ -87,6 +87,12 @@ document.getElementById("stok-form").addEventListener("submit", (e) => {
     edisi = ""
     stok = ""
     cover = ""
+
+    document.getElementById("alert").style.display = "block"
+
+    setTimeout(() => {
+      document.getElementById("alert").style.display = "none"
+    }, 5000);
 
     getData()
 })

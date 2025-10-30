@@ -7,6 +7,7 @@ body {
     background-color: rgb(212, 255, 241);
 }
 
+
 /* index html */
 .login-container{
     margin-top: 30px;
@@ -16,7 +17,6 @@ body {
 .login-input {
     margin-bottom: 30px;
 }
-
 
 .login-button {
     width: 100%;
@@ -76,4 +76,8 @@ span.register-text {
 .forget {
     cursor: pointer;
     color: blue;
+}
+
+#alert{
+    display: none;
 }
