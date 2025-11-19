@@ -77,7 +77,7 @@ tracking_search.addEventListener("submit", (e) => {
     let submit = document.getElementById("submit-button")
     let reset = document.getElementById("reset-button")
 
-    submit.style.display = "none"
+    submit.style.display = "non"
     reset.style.display = "block"
 })
 
