@@ -61,7 +61,7 @@ var dataTracking = {
 
 const tracking_search = document.getElementById("tracking_search")
 const code_search = document.getElementById("kode_search")
-
+console.log("hello")
 tracking_search.addEventListener("submit", (e) => {
     e.preventDefault()
     console.log(code_search.value)
